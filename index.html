@@ -2,15 +2,61 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>271FA</title>
+  <title>попробуй найти меня</title>
 
-  <!-- SECRET-CODE: BRSQ -->
+  <!-- SECRET-CODE: LEVEL-1-FOUND -->
 
+  <style>
+    body {
+      background: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    /* Невидимая кнопка */
+    .hidden-download {
+      color: white;          /* белый текст */
+      background: white;     /* белый фон */
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 5px;
+    }
+
+    /* Чтобы при выделении было видно */
+    ::selection {
+      background: #3399ff;
+      color: black;
+    }
+  </style>
 </head>
 <body>
 
-  <div id="text" data-hidden-code="SECRET-CODE: BRSQ">
-    попробуй найти меня =)
+  <div class="container">
+    <div id="text" data-hidden-code="LEVEL-1-FOUND">
+      попробуй найти меня
+    </div>
+
+    <br>
+
+    <!-- Невидимая кнопка -->
+    <a
+      href="secret.png"
+      download
+      class="hidden-download"
+      data-secret="DOWNLOAD-LEVEL"
+    >
+      скачать файл
+    </a>
   </div>
 
 </body>
