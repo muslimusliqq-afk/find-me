@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>попробуй найти меня</title>
 
-  <!-- SECRET-CODE: LEVEL-1-FOUND -->
+  <!-- 🔐 DEVTOOLS CODE: PART-A7X -->
 
   <style>
     body {
@@ -22,17 +22,15 @@
       text-align: center;
     }
 
-    /* Невидимая кнопка */
     .hidden-download {
-      color: white;          /* белый текст */
-      background: white;     /* белый фон */
+      color: white;
+      background: white;
       border: none;
       cursor: pointer;
       font-size: 16px;
       padding: 5px;
     }
 
-    /* Чтобы при выделении было видно */
     ::selection {
       background: #3399ff;
       color: black;
@@ -42,22 +40,31 @@
 <body>
 
   <div class="container">
-    <div id="text" data-hidden-code="LEVEL-1-FOUND">
+
+    <!-- 🔎 Ищи внимательнее в коде -->
+    <div id="text" data-devtools="SECRET-CODE: 023">
       попробуй найти меня
     </div>
 
     <br>
 
-    <!-- Невидимая кнопка -->
     <a
       href="secret.png"
       download
       class="hidden-download"
-      data-secret="DOWNLOAD-LEVEL"
+      data-download-code="FILE-LEVEL"
     >
       скачать файл
     </a>
+
   </div>
+
+  <script>
+    console.log(
+      "%cDEVTOOLS FOUND → PART-A7X",
+      "color: green; font-size: 16px; font-weight: bold;"
+    );
+  </script>
 
 </body>
 </html>
